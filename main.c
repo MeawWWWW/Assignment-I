@@ -3,6 +3,8 @@
 
 int prime(int num);
 
+int c = 0;
+
 int main(int argc, char **argv){
   
   int *a ,i ;
@@ -22,10 +24,12 @@ int main(int argc, char **argv){
  
   }
 
-  printf("The smallest prime is %d \n",min);
-  printf("The biggest prime is %d \n",max);
+  if(c != 0){
+    printf("The smallest prime is %d \n",min);
+    printf("The biggest prime is %d \n",max);
+  }
+  else printf("There's not a prime number\n");
   
-
   return 0;
 }
 
@@ -43,6 +47,7 @@ int prime(int num){
 
   if (flag == 0 && num != 1 && num != 0){
     //printf("return %d \n",num);
+    c++;
     return num;
   }
 
