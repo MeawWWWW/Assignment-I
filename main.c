@@ -30,6 +30,7 @@ int main(int argc, char **argv){
   }
   else printf("There's not a prime number\n");
   
+  free(a);
   return 0;
 }
 
