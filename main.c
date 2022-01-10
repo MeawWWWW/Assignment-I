@@ -17,8 +17,8 @@ int main(int argc, char **argv){
 
     num = prime(a[i-1]);
 
-    if(num <= min && num != 0) min = num;
-    if(num >= max) max = num;
+    if(num <= min && num != 0 && num > 0) min = num;
+    if(num >= max ) max = num;
  
   }
 
